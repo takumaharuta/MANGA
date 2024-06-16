@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->string('profile_text')->nullable();
+            $table->bigInteger('creater_role')->nullable(); /*あとで確認しておく*/
         });
     }
 
